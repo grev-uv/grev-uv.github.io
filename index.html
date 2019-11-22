@@ -10,14 +10,21 @@
     		<ul>
         		<li><a href="/">Home</a></li>
 	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
+        		<!-- <li><a href="/cv">CV</a></li>
+        		<li><a href="/blog">Blog</a></li> -->
     		</ul>
 		</nav>
 		<div class="container">
     		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
+        		<h1>HPG-Msuite, the methylation analysis ultimate tools suite</h1>
+			<p><b>HPG-Msuite</b> is a powerful and friendly tool kit for DNA methylation analysis and DMR detection.</p>
+			<p>This suite contains tools for all the steps of the process:</p>
+			<ul class="contacts>
+				   <li><a href="https://github.com/grev-uv/hpg-methyl"><b>HPG-Methyl</b></a>, is an ultrafast and highly sensitive tool for alignment and methylation analysis of Next-Generation Sequencing samples which works with both single-end or paired-end .fastq files. It yields the alignment and methylation status of the sample dataset in the form of .bam files.</li>
+				   <li><a href="https://github.com/grev-uv/hpg-hmapper"><b>HPG-Hmapper</b></a> is the next analysis step can be done. A parallel software tool for analyzing DNA hydroximethylation data, which works with the .bam files yielded by <b>HPG-Methyl</b> and provides a .csv file containing the methylation map for each chromosome. For each position in the chromosome, this tool yields the number of Cs, noCs, 5mCs and 5hmCs aligned by HPG-Methyl.</li>
+				   <li><a href="https://github.com/grev-uv/hpg-dhunter"><b>HPG-Dhunter</b></a> is the last step in the methylation analysis. A powerful, real-time visualizer tool based on CUDA that can analyze the .csv files coming from different DNA samples and detect Differentially Methylated Regions (DMRs) between samples.</li>
+				   <li><b>HPG-Dhunter</b> also has a version to automatically identify all the DMRs within the whole genome and among all the existing samples, called <a href="https://github.com/grev-uv/hpg-dhunter-batch"><b>HPG-Dhunter-Batch</b</a>. Although this version does not allow visualization, it yields a list of all the DMRs found. The user can then use the other version to inspect the desired DMRs.</li>
+			</ul>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 		<footer>
