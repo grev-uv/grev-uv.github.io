@@ -22,23 +22,22 @@
 			<p>This suite contains tools for all the steps of the process:</p>
 			
 			<ul class="contacts">
-				   <li><a href="https://github.com/grev-uv/hpg-methyl">HPG-Methyl</a>, is an ultrafast and highly sensitive tool for alignment and methylation analysis of Next-Generation Sequencing samples which works with both single-end or paired-end .fastq files. It yields the alignment and methylation status of the sample dataset in the form of .bam files.</li>
-				   <li><a href="https://github.com/grev-uv/hpg-hmapper">HPG-Hmapper</a> is the next analysis step can be done. A parallel software tool for analyzing DNA hydroximethylation data, which works with the .bam files yielded by <b>HPG-Methyl</b> and provides a .csv file containing the methylation map for each chromosome. For each position in the chromosome, this tool yields the number of Cs, noCs, 5mCs and 5hmCs aligned by HPG-Methyl.</li>
-				   <li><a href="https://github.com/grev-uv/hpg-dhunter">HPG-Dhunter</a> is the last step in the methylation analysis. A powerful, real-time visualizer tool based on CUDA that can analyze the .csv files coming from different DNA samples and detect Differentially Methylated Regions (DMRs) between samples.</li>
-				   <li>HPG-Dhunter also has a version to automatically identify all the DMRs within the whole genome and among all the existing samples, called <a href="https://github.com/grev-uv/hpg-dhunter-batch">HPG-Dhunter-Batch</a>. Although this version does not allow visualization, it yields a list of all the DMRs found. The user can then use the other version to inspect the desired DMRs.</li>
+				   <li><a href="https://github.com/grev-uv/hpg-methyl">HPG-Methyl</a>, is an ultrafast and highly sensitive tool for alignment and methylation analysis of Next-Generation Sequencing samples. It works with both single-end and paired-end .fastq files, and it yields the alignment and methylation status of the sample dataset in the form of .bam files</li>
+				   <li><a href="https://github.com/grev-uv/hpg-hmapper">HPG-Hmapper</a> is a parallel software tool for analyzing DNA hydroximethylation data. It takes .bam files as input data (yielded by HPG-Methyl, Bismark or any other aligner which yields output data with the same format), and it provides a .csv file containing the methylation map for each chromosome. For each position in the chromosome, this tool yields the number of Cs, noCs, 5mCs and 5hmCs aligned by the alignment tool</li>
+				   <li><a href="https://github.com/grev-uv/hpg-dhunter">HPG-Dhunter</a> is the last step in the methylation analysis. It is a real-time visualization  tool based on CUDA, which can analyze the .csv files coming from different DNA samples and detect Differentially Methylated Regions (DMRs) between samples.</li>
+				   <li>HPG-Dhunter also has a version to automatically identify all the DMRs in all the chromosomes of the genome among all the existing samples. This version is called <a href="https://github.com/grev-uv/hpg-dhunter-batch">HPG-Dhunter-Batch</a>. Although this version does not allow visualization, it yields a list of all the DMRs found. The user can then use HPG-Dhunter to inspect the desired DMRs.</li>
 			</ul>
 			
-			<p>So, of course, we highly recommended the use of this <b>HPG-Msuite</b> for DNA methylation analysis and DMR identification.</p>
-			<p>The use of this tools suite, on one side, will accelerate your work and, on the other side, you will help to improve it!.</p>
-			<p>TODO explanation of how to install all the packages for a properly use</p>
-    		</div><!-- /.blurb -->
+			<p>Although we highly recommend the use of the HPG-Msuite for DNA methylation analysis and DMR identification, any of the tools included in this suite can be used separately.</p>
+
+			</div><!-- /.blurb -->
 		</div><!-- /.container -->
 		
 		<div class="container">
     		<div class="blurb">
 			<h2>How to install this tools suite</h2>
 			
-			<p>The most appropriate order to install <b>HPG-Msuite</b> is:</p>
+			<p>The most appropriate way if installing the <b>HPG-Msuite</b> is to follow the next steps:</p>
 			
 			<ul>
 				<li>Install <a href="https://github.com/grev-uv/hpg-methyl">HPG-Methyl</a> into your system</li>
@@ -46,16 +45,16 @@
 				<li>Install <a href="https://github.com/grev-uv/hpg-msuite">HPG-Msuite</a> into your system</li>
 			</ul>
 			
-			<p>At this point, it is possible to do the first two steps in DNA methylation analysis. Align the FASTQ files and map the BAM files. So, a bunch of files, ordered by sample, chromosome and strandt are obtained.</p>
-			<p>If your computer have an Nvidia device inside, it is possible to identify DMRs fastly.</p>
+			<p>At this point, it is possible to do the first two steps in DNA methylation analysis: Alignment of the FASTQ files and mapping the BAM files into a CSV file for each chromosome. So, a bunch of files, ordered by sample, chromosome and strand are obtained.</p>
+			<p>If your computer includes an Nvidia device inside, it is possible to quickly identify DMRs:</p>
 			
 			<ul>
-				<li>Make sure that CUDA SDk is installed in your system. For that, open a terminal (Ctrl + Alt + t) and type "nvcc --version". If nothig appear, a previous CUDA installation is needed.</li>
+				<li>Make sure that CUDA SDK is installed in your system: open a terminal (Ctrl + Alt + t) and type "nvcc --version". If nothing appears, then a CUDA installation is needed (see https://developer.nvidia.com/cuda-downloads).</li>
 				<li>Install <a href="https://github.com/grev-uv/hpg-dhunter">HPG-Dhunter</a> into your system</li>
 				<li>Install <a href="https://github.com/grev-uv/hpg-dhunter-batch">HPG-Dhunter-Batch</a> into your system</li>
 			</ul>
 			
-			<p>Finally, your will enjoy of one of the fastest tool for DMRs identification in the world.</p>
+			<p>At thispoint, your can enjoy the full capabilities of HPG-Msuite.</p>
 			
 		</div><!-- /.blurb -->
 		</div><!-- /.container -->	
