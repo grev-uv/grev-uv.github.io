@@ -28,9 +28,38 @@
 				   <li>HPG-Dhunter also has a version to automatically identify all the DMRs within the whole genome and among all the existing samples, called <a href="https://github.com/grev-uv/hpg-dhunter-batch">HPG-Dhunter-Batch</a>. Although this version does not allow visualization, it yields a list of all the DMRs found. The user can then use the other version to inspect the desired DMRs.</li>
 			</ul>
 			
+			<p>So, of course, we highly recommended the use of this <b>HPG-Msuite</b> for DNA methylation analysis and DMR identification.</p>
+			<p>The use of this tools suite, on one side, will accelerate your work and, on the other side, you will help to improve it!.</p>
 			<p>TODO explanation of how to install all the packages for a properly use</p>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
+		
+		<div class="container">
+    		<div class="blurb">
+			<h2>How to install this tools suite</h2>
+			
+			<p>The most appropriate order to install <b>HPG-Msuite</b> is:</p>
+			
+			<ul>
+				<li>Install <a href="https://github.com/grev-uv/hpg-methyl">HPG-Methyl</a> into your system</li>
+				<li>Install <a href="https://github.com/grev-uv/hpg-hmapper">HPG-Hmapper</a> into your system</li>
+				<li>Install <a href="https://github.com/grev-uv/hpg-msuite">HPG-Msuite</a> into your system</li>
+			</ul>
+			
+			<p>At this point, it is possible to do the first two steps in DNA methylation analysis. Align the FASTQ files and map the BAM files. So, a bunch of files, ordered by sample, chromosome and strandt are obtained.</p>
+			<p>If your computer have an Nvidia device inside, it is possible to identify DMRs fastly.</p>
+			
+			<ul>
+				<li>Make sure that CUDA SDk is installed in your system. For that, open a terminal (Ctrl + Alt + t) and type "nvcc --version". If nothig appear, a previous CUDA installation is needed.</li>
+				<li>Install <a href="https://github.com/grev-uv/hpg-dhunter">HPG-Dhunter</a> into your system</li>
+				<li>Install <a href="https://github.com/grev-uv/hpg-dhunter-batch">HPG-Dhunter-Batch</a> into your system</li>
+			</ul>
+			
+			<p>Finally, your will enjoy of one of the fastest tool for DMRs identification in the world.</p>
+			
+		</div><!-- /.blurb -->
+		</div><!-- /.container -->	
+		
 		<footer>
     		<ul>
         		<li><a href="mailto:juan.orduna@uv.es">email</a></li>
